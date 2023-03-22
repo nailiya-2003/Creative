@@ -87,7 +87,7 @@ section .content a {
     left: calc(100% - 60px);
     width: 100%;
     height: 100%;
-    background: #fff;
+    background:url("img/pexels-furkanfdemir-5018182.jpg") center center/cover no-repeat;
     z-index: 999;
     display: flex;
     justify-content: center;
@@ -95,25 +95,37 @@ section .content a {
     transition: 0.2s;
 }
 .navigation.active {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    transition: 0.2s;
+    left: 0px;
 }
 .navigation ul {
     position: relative;
     list-style: none;
     text-align: center;
 }
+.navigation ul li {
+    display: inline-block;
+    text-shadow: 4px 7px 8px #111;
+    animation: textanimate 1.5s linear;
+    animation-iteration-count: infinite;
+}
+.navigation ul.menu {
+   top: -35%;
+}
+.navigation ul.menu a {
+   margin-left: 70px;
+}
+@keyframes textanimate {
+    100% {
+        text-shadow: 4px 5px 6px #fff;
+    }
+}
 .navigation ul li a {
     font-size: 2.5em;
-    color: #111;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 100;
     transition: 0.3s;
+  
 }
 .navigation ul li a:hover {
     color: #f60f20;
@@ -124,10 +136,11 @@ section .content a {
     left: 0;
     width: 60px;
     height: 100%;
-    border-right: 1px solid rgba(0, 0, 0, .1);
+    border-right: 5px solid rgba(0, 0, 0, .1);
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #fff;
 }
 .socialbar ul {
     position: relative;
@@ -140,6 +153,7 @@ section .content a {
     position: relative;
     display: inline-block;
     transform: scale(0.6);
+   
 }
 .socialbar .emailBx {
     position: absolute;
