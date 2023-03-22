@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Creative Website Design</title>
+</head>
+<body>
+    <section class="creative">
+    <div class="logo">Creative</div>
+    <img src="img/bg.jpg" alt="Creative" class="bg">
+    <div class="content">
+        <h2>Let's Make <br>Something Creative</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dignissimos laborum quae rem minus nobis id distinctio veniam deserunt eligendi a numquam, eveniet cupiditate beatae. Earum placeat necessitatibus inventore beatae!</p>
+        <a href="#">Get Started</a>
+    </div>
+    <p class="copyrighttext">@2023. Online Tutorials</p>
+</section>
+<div class="menuToggle active" onclick="toggleMenu()"></div>
+<div class="navigation active" onclick="toggleMenu()">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="socialbar">
+        <ul>
+            <li><a href="#"><img src="img/facebook.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="img/instagram.png" alt="instagram"></a></li>
+            <li><a href="#"><img src="img/twitter.png" alt="twitter"></a></li>
+        </ul>
+        <a href="mailto:you@email.com" class="emailBx"><img src="img/email.png" alt=""></a>
+</div>
+   <script type="text/javascript">
+    function toggleMenu() {
+        var menuToggle = document.querySelector('.menuToggle')
+        var navigation = document.querySelector('.navigation')
+        menuToggle.classList.toggle('active')
+        navigation.classList.toggle('active')
+    }
+   </script>
+</div>
+</body>
+</html>
